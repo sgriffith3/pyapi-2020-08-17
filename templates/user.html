@@ -1,0 +1,14 @@
+<h1>Hello {{ user }}</h1>
+
+<p>You are logged in as {{ user }}.</p>
+
+{% for file in files %}
+<p>{{ file }}</p>
+{% endfor %}
+
+{% for host in hosts %}
+    <h2>{{ host | upper }}</h2>
+    {% for service in hosts[host] %}
+        <p>{{ service | title }}</p>
+    {% endfor %}
+{% endfor %}

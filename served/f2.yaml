@@ -1,0 +1,7 @@
+---
+- name: Playbook I want to serve
+  hosts: all
+  gather_facts: false
+  tasks:
+  - debug:
+      msg: This is cool
